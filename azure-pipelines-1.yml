@@ -25,9 +25,5 @@ steps:
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
     addSpnToEnvironment: true
-script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
 
   displayName: 'Run a multi-line script'
