@@ -16,11 +16,11 @@ steps:
     azureResourceManagerConnection: 'Conn1'
     subscriptionId: 'fb4c95c5-2774-4cbd-907e-d9685748ba89'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'armRSG02'
+    resourceGroupName: 'armRSG021'
     location: 'Southeast Asia'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json'
-    overrideParameters: '-adminUsername "username" -adminPassword "Password@1123" -dnsLabelPrefix dns'
+    overrideParameters: '-adminUsername "username" -adminPassword "Password@1123" -dnsLabelPrefix dns001'
     deploymentMode: 'Incremental'
 
   displayName: 'Run a multi-line script'
