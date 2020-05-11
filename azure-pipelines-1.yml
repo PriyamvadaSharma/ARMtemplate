@@ -20,7 +20,7 @@ steps:
     location: 'South India'
     templateLocation: 'Linked artifact'
     csmFile: 'CreateWebApp/azuredeploy02.json'
-    overrideParameters: '-projectName ARMtemplate -linkedTemplateUri https://raw.githubusercontent.com/PriyamvadaSharma/ARMtemplate/master/CreateWebApp/azuredeploy02.json'
+    overrideParameters: '-projectName ARMtemplate -linkedTemplateUri https://raw.githubusercontent.com/PriyamvadaSharma/ARMtemplate/master/CreateWebApp/azuredeploy02.json -adminUsername 'username' -adminPassword 'Password@1123' -dnsLabelPrefix dns '
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
     addSpnToEnvironment: true
