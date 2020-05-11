@@ -10,6 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps: 
+- 
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
@@ -17,12 +18,10 @@ steps:
     subscriptionId: 'fb4c95c5-2774-4cbd-907e-d9685748ba89'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'armRSG02'
-    location: 'South India'
-    templateLocation: 'Linked artifact'
-    csmFile: 'CreateWebApp/azuredeploy02.json'
-    overrideParameters: '-projectName ARMtemplate -linkedTemplateUri https://raw.githubusercontent.com/PriyamvadaSharma/ARMtemplate/master/CreateWebApp/azuredeploy02.json -adminUsername username -adminPassword Password@1123 -dnsLabelPrefix dns '
+    location: 'Southeast Asia'
+    templateLocation: 'URL of the file'
+    csmFileLink: 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json'
+    overrideParameters: '-adminUsername "username" -adminPassword "Password@1123" -dnsLabelPrefix dns'
     deploymentMode: 'Incremental'
-    deploymentName: 'DeployPipelineTemplate'
-    addSpnToEnvironment: true
 
   displayName: 'Run a multi-line script'
